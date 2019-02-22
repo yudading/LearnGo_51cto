@@ -1,6 +1,8 @@
 package main
 
+import "../list"
+
 func main() {
-	list(5)
+	list.List(7)
 
 }
