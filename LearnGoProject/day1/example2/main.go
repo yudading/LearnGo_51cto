@@ -1,8 +1,9 @@
 package main
 
-import "../list"
+import (
+	"../test1"
+)
 
 func main() {
-	list.List(7)
-
+	aaa.Xxx(9)
 }
