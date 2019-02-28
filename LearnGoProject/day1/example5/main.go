@@ -15,4 +15,11 @@ func main() {
 
 	const a, b, c = 1, false, "str"
 	fmt.Println(a, b, c)
+
+	const (
+		Unknown = 0
+		Female  = 1
+		Male    = 2
+	)
+	fmt.Println(Unknown)
 }
