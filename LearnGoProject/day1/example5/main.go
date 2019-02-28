@@ -12,4 +12,7 @@ func main() {
 
 	fmt.Printf("面积为:%d", area)
 	fmt.Println()
+
+	const a, b, c = 1, false, "str"
+	fmt.Println(a, b, c)
 }
