@@ -16,10 +16,15 @@ func main() {
 	const a, b, c = 1, false, "str"
 	fmt.Println(a, b, c)
 
-	const (
+	/*const (
 		Unknown = 0
 		Female  = 1
 		Male    = 2
+	)*/
+	const (
+		Unknown = iota
+		Female
+		Male
 	)
-	fmt.Println(Unknown)
+	fmt.Println(Unknown, Female, Male)
 }
