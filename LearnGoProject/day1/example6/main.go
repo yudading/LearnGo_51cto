@@ -16,4 +16,6 @@ func main() {
 	fmt.Printf("%t\n", b)
 	fmt.Printf("%b\n", 100)
 	fmt.Printf("%f\n", 100.00)
+	fmt.Printf("%q\n", "this is a test")
+	fmt.Printf("%v\n", "this is a test")
 }
