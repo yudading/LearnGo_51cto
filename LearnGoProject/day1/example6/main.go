@@ -19,4 +19,5 @@ func main() {
 	fmt.Printf("%q\n", "this is a test")
 	fmt.Printf("%v\n", "this is a test")
 	fmt.Printf("%q\n", " ")
+	fmt.Printf("%x\n", 3999922)
 }
