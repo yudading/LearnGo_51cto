@@ -21,4 +21,7 @@ func main() {
 	fmt.Printf("%q\n", " ")
 	fmt.Printf("%x\n", 3999922)
 	fmt.Printf("%p\n", &a)
+
+	str := fmt.Sprintf("a=%d", a)
+	fmt.Printf("%q\n", str)
 }
