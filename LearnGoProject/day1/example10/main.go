@@ -16,4 +16,25 @@ func main() {
 		fmt.Println("a is equals default")
 	}
 
+	g := grade(100)
+	fmt.Println(g)
+}
+
+func grade(score int) string {
+	g := ""
+
+	switch {
+	case score < 0 || score > 100:
+		panic(fmt.Sprint("wrong score:%d", score))
+	case score < 60:
+		g = "f"
+	case score < 80:
+		g = "c"
+	case score < 90:
+		g = "b"
+	case score <= 100:
+		g = "a"
+	}
+
+	return g
 }
