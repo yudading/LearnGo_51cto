@@ -16,7 +16,7 @@ func main() {
 		fmt.Println("a is equals default")
 	}
 
-	g := grade(100)
+	g := grade(101)
 	fmt.Println(g)
 }
 
