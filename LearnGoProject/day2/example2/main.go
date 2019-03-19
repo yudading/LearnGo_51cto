@@ -14,13 +14,13 @@ func sub(a, b int) int {
 
 //op 指可为任意函数名字 如改为 aa 或 bb
 
-func operator(op add_func, a int, b int) int {
-	return op(a, b)
-}
-
-//func operator(aa add_func, a int, b int) int {
-//	return aa(a,b)
+//func operator(op add_func, a int, b int) int {
+//	return op(a, b)
 //}
+
+func operator(aa add_func, a int, b int) int {
+	return aa(a, b)
+}
 
 func main() {
 	c := add
