@@ -10,12 +10,12 @@ func add(a int, arg ...int) int {
 	return sum
 }
 
-func concat(a string, arg ...string) string {
-	var result string = a
+func concat(a string, arg ...string) (result string) {
+	result = a
 	for i := 0; i < len(arg); i++ {
 		result += arg[i]
 	}
-	return result
+	return
 }
 func main() {
 	sum := add(10, 2, 3, 4, 5)
