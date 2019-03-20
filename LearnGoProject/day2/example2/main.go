@@ -22,6 +22,10 @@ func operator(aa add_func, a int, b int) int {
 	return aa(a, b)
 }
 
+func div(a, b int) (int, int) {
+	return a / b, a % b
+}
+
 func main() {
 	c := add
 	d := sub
@@ -31,4 +35,6 @@ func main() {
 	sum1 := operator(d, 5, 6)
 	fmt.Println(sum1)
 
+	q, p := div(9, 4)
+	fmt.Println(q, p)
 }
