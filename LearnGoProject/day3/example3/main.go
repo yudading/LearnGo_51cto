@@ -4,20 +4,15 @@ import "fmt"
 
 func main() {
 
-	var a [10]int
-	var b [5]int
+	var a [5]int = [5]int{1, 2, 3, 4, 5}
+	fmt.Println("a=", a)
 
-	fmt.Printf("len(a)=%d,len(b)=%d\n", len(a), len(b))
+	b := [5]int{1, 2, 3, 4, 5}
+	fmt.Println("b=", b)
 
-	a[0] = 1
-	i := 1
-	a[i] = 2
+	c := [5]int{1, 2, 3}
+	fmt.Println("c=", c)
 
-	for i := 0; i < len(a); i++ {
-		a[i] = i + 1
-	}
-
-	for i, data := range a {
-		fmt.Printf("a[%d]=%d\n", i, data)
-	}
+	d := [5]int{2: 10, 4: 20}
+	fmt.Println("d=", d)
 }
